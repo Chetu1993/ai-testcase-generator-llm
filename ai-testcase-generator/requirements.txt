@@ -1,0 +1,7 @@
+streamlit
+pandas
+langchain
+ollama
+langchain-ollama
+selenium
+webdriver-manager
