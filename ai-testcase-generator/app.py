@@ -9,8 +9,13 @@ requirement=st.text_area("enter software requirements")
 if st.button("Generate test cases"):
     prompt=f"""generate software testcases for the following requirements:
 
-Return in table format with columns:
+Return ONLY a table using this exact format:
 Test Case ID | Test Scenario | Test Steps | Expected Result
+Rules:
+- Exactly 4 steps
+- use "|" as seperator
+- do not add extra "|" inside cells
+- do not add markdown seperators like |----|
 Do not include explanations.
 Requirement:
 {requirement}
